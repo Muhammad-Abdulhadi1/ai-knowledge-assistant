@@ -41,24 +41,40 @@ An intelligent multi-agent system for processing and querying personal knowledge
 
 ## 🚦 Getting Started
 
-1. **Install Dependencies**
+1. **Set Up Python Environment**
 ```bash
+# Create a virtual environment
+python3 -m venv .venv
+
+# Activate the virtual environment
+# On Windows
+.venv\Scripts\activate
+# On Unix or MacOS
+source .venv/bin/activate
+
+# Upgrade pip
+python3 -m pip install --upgrade pip
+```
+
+2. **Install Dependencies**
+```bash
+# Install all required packages
 pip install -r requirements.txt
 ```
 
-2. **Configure Environment**
+3. **Configure Environment**
 Create a `.env` file with:
 ```env
-OLLAMA_BASE_URL="http:/host.docker.internal:11434"
+OLLAMA_BASE_URL="http://host.docker.internal:11434"
 OLLAMA_MODEL="llama3"
 ```
 
-3. **Start the Assistant**
+4. **Start the Assistant**
 ```bash
 uvicorn api:app --reload
 ```
 
-4. **Access the Interface**
+5. **Access the Interface**
 Open `http://localhost:8000` in your browser to start interacting with your AI Knowledge Assistant.
 
 ## 📂 Project Structure
