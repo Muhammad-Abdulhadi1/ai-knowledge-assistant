@@ -13,14 +13,14 @@ from main import chain, vectorstore
 os.makedirs("static", exist_ok=True)
 
 app = FastAPI(
-    title="Personal Knowledge Base API",
+    title="AI Knowledge Assistant",
     description="""
-    API for querying your personal knowledge base using RAG (Retrieval Augmented Generation).
+    An intelligent multi-agent system for processing and querying your personal knowledge base.
     
     Available endpoints:
-    - GET /: Chat interface
-    - GET /status: Check knowledge base status
+    - GET /: Interactive chat interface
     - POST /query: Query your knowledge base
+    - GET /status: Check system status
     """,
     version="1.0.0"
 )
