@@ -1,0 +1,9 @@
+langchain>=0.1.0
+fastapi>=0.104.1
+uvicorn>=0.24.0
+python-dotenv>=1.0.0
+pydantic>=2.5.2
+langchain-community>=0.0.1
+langchain-ollama>=0.0.1
+unstructured>=0.10.30
+markdown>=3.5.1
